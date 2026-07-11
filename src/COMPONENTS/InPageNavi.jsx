@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-function InPageNavi({ teams ,children}) {
+function InPageNavi({ teams ,children, onClick}) {
 
     const[index, setIndex] = useState(0)
 
@@ -9,7 +9,10 @@ function InPageNavi({ teams ,children}) {
     <div>
         <p>In-Page Navigation</p>
       {teams.map((data, i) => (
-        <button onClick={() => setIndex(i)}>{data}</button>
+        <button onClick={() =>{
+           setIndex(i);
+           onClick[i]();
+        }}>{data}</button>
         ))}
 
         {children[index]}
