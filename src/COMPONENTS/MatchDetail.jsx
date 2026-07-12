@@ -138,7 +138,7 @@ const MatchDetail = () => {
     const options = {
       method: 'GET',
       headers: {
-        'x-rapidapi-key': import.meta.env.VITE_API_KEY,
+        'x-rapidapi-key': '7d240f3335msh88048827ba7eae3p125816jsnbd1fa131fc52',
         'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com',
         'Content-Type': 'application/json'
       }
@@ -160,7 +160,7 @@ const MatchDetail = () => {
     const options = {
       method: 'GET',
       headers: {
-        'x-rapidapi-key': import.meta.env.VITE_API_KEY,
+        'x-rapidapi-key': '7d240f3335msh88048827ba7eae3p125816jsnbd1fa131fc52',
         'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com',
         'Content-Type': 'application/json'
       }
