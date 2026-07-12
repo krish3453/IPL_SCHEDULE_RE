@@ -138,11 +138,12 @@ const MatchDetail = () => {
     const options = {
       method: 'GET',
       headers: {
-        'x-rapidapi-key': '83f9e7be33msh3e2f981b03a3eecp1c7616jsn3d086cee833b',
+        'x-rapidapi-key': '7d240f3335msh88048827ba7eae3p125816jsnbd1fa131fc52',
         'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com',
         'Content-Type': 'application/json'
       }
     };
+
 
     try {
       const response = await fetch(url, options);
@@ -159,7 +160,7 @@ const MatchDetail = () => {
     const options = {
       method: 'GET',
       headers: {
-        'x-rapidapi-key': '83f9e7be33msh3e2f981b03a3eecp1c7616jsn3d086cee833b',
+        'x-rapidapi-key': '7d240f3335msh88048827ba7eae3p125816jsnbd1fa131fc52',
         'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com',
         'Content-Type': 'application/json'
       }
@@ -199,32 +200,32 @@ const MatchDetail = () => {
 
       </InPageNavi>
 
- <div>
-  <h2>Players</h2>
+      <div>
+        <h2>Players</h2>
 
-  {teamPlayers.player?.map((group, i) => (
-    <div key={i}>
-      <h3>{group.category}</h3>
+        {teamPlayers.player?.map((group, i) => (
+          <div key={i}>
+            <h3>{group.category}</h3>
 
-      {group.player.map((player) => (
-        <div
-          key={player.id}
-          style={{
-            border: "1px solid gray",
-            margin: "8px",
-            padding: "10px",
-            borderRadius: "8px",
-          }}
-        >
-          <h4>{player.name}</h4>
-          <p>Role: {player.role}</p>
+            {group.player.map((player) => (
+              <div
+                key={player.id}
+                style={{
+                  border: "1px solid gray",
+                  margin: "8px",
+                  padding: "10px",
+                  borderRadius: "8px",
+                }}
+              >
+                <h4>{player.name}</h4>
+                <p>Role: {player.role}</p>
 
-         
-        </div>
-      ))}
-    </div>
-  ))}
-</div>
+
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
 
     </>
   );
